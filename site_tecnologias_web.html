@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tecnologias Web</title>
+    <link rel="stylesheet" href="estilo_site_web.css">
+    <script>
+        function myFunction1() {
+         alert("Você clicou HTML!");
+         window.open("https://www.w3schools.com/html/default.asp");
+        }
+        function myFunction2() {
+         alert("Você clicou CSS!");
+         window.open("https://www.w3schools.com/css/");
+        }
+        function myFunction3() {
+         alert("Você clicou JavaScript!");
+         window.open("https://www.w3schools.com/js/default.asp");
+        }
+        function alterText() {
+          document.getElementById("topleft").innerHTML="JavaScript tem variáveis ";
+          document.getElementById("topright").innerHTML="JavaScript suporta Funções ";
+          document.getElementById("bottomright").innerHTML="JavaScript escuta eventos de tela ";
+          document.getElementById("bottomleft").innerHTML="JavaScript suporta desvios conicionais ";
+          document.getElementById("center").innerHTML="JavaScript usa let para declarar variáveis ";
+        }
+        </script>
+</head>
+<body>
+    <header>
+    <span> Conhecendo as principais tecnologias Web </span>
+    <p><b><a href="https://www.w3schools.com/css/" target="_blank">CSS Tutorial</a></b></p>
+    </header>
+    <main>
+        <table>
+          <th colspan="3"><b> Tecnologias Web </b></th>
+          <tr>
+            <td> HTML</td>
+            <td> CSS </td>
+            <td> JavaScript </td>
+          </tr>
+          <tr>
+            <td><button type="button" id="html" onclick="myFunction1()">HTML</button></td>
+            <td><button type="button" id="css" onclick="myFunction2()">CSS</button></td>
+            <td><button type="button" id="javascript" onclick="myFunction3()">JavaScript</button></td>
+          </tr>
+        </table>
+        <div style="padding-bottom: 2000">
+         <div class="sticky"> Java Script </div>
+         JavaScript (frequentemente abreviado como JS) é uma linguagem de programação interpretada estruturada, de script em alto nível com tipagem dinâmica fraca e multiparadigma.
+         Juntamente com HTML e CSS, o JavaScript é uma das três principais tecnologias da World Wide Web.
+         JavaScript permite páginas da Web interativas e, portanto, é uma parte essencial dos aplicativos da web. 
+         A grande maioria dos sites usa, e todos os principais navegadores têm um mecanismo JavaScript dedicado para executá-lo.
+         É atualmente a principal linguagem para programação client-side em navegadores web. É também bastante utilizada do lado do servidor através de ambientes como o node.js.
+        </div>
+      <div class="container">
+        <img src="imagem_jv.jpg" alt="Código Javascript" width="1000" height="700">
+
+        <div class="topleft" id="topleft"> Topo a esquerda </div>
+        <div class="bottomleft" id="bottomleft"> Abaixo e a esquerda </div>
+        <div class="bottomright" id="bottomright"> Abaixo e a direita </div>
+        <div class="center" id="center"> Texto ao centro </div>
+        <div class="topright" id="topright"> Topo a direita </div>
+      </div> 
+      <button type="button" id="btntx" onclick="alterText()">Trocar Texto</button>
+    </main>
+
+</body>
+</html>

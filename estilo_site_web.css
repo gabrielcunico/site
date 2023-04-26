@@ -1,0 +1,89 @@
+span {
+    color:purple;
+    display: inline;
+}
+  /* link não acessado - link acessado */
+a:link, a:visited {
+    background-color: red;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+  /* mouse sobre o link - link ativo */
+a:hover, a:active {
+    background-color: red;
+    color: pink;
+}
+a {
+    background-color: coral;
+    float: right;
+    padding: 0;
+    top:0;
+    right:0;
+}
+table {
+    width: 100%;
+    border: 2px solid;
+}
+td {
+    text-align: center;
+}
+header {
+    text-align: center;
+    font-size: 25px;
+    border: 2px solid black;
+    width: 100%;
+    height: 100%;
+}
+main {
+    width: 100%;
+    height: 100%;
+}
+div.stick{
+    position: -webkit-sticky;
+    position: sticky; 
+    top: 0;
+    background-color: green;
+    border: 2px solid;
+}
+.container{
+    position: relative; 
+}
+.topleft{
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    font-size: 18px;
+}
+.bottomleft{
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+    font-size: 18px;
+}
+.bottomright{
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+    font-size: 18px;
+}
+.center{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+}
+.topright{
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    font-size: 18px;
+}
+img{
+    width: 100%;
+    height: auto;
+    opacity: 0.3;
+}
